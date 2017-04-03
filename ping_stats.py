@@ -13,7 +13,7 @@ with open("ping_data.txt") as f:
 cdfVals = []
 errors = []
 
-for line in content[:10000]:
+for line in content:
     if line[0] == '6':
         start = line.index("time=") + 5
         val = line[start:]
