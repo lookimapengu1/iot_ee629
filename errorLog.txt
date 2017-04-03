@@ -1,0 +1,60 @@
+PING battle.net (24.105.29.30) 56(84) bytes of data.
+
+From 24.105.29.30 icmp_seq=21180 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21181 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21182 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21183 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21184 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21187 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21188 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21189 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21190 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21191 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21192 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21193 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21194 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21195 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21196 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21197 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21198 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21199 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21200 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21201 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21202 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21203 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21204 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21205 Destination Host Unreachable
+
+From 24.105.29.30 icmp_seq=21206 Destination Host Unreachable
+
+
+
+--- battle.net ping statistics ---
+
+86400 packets transmitted, 86298 received, +25 errors, 0% packet loss, time 97277903ms
+
+rtt min/avg/max/mdev = 75.070/82.695/1416.512/44.368 ms, pipe 4
+

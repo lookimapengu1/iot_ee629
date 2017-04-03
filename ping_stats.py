@@ -4,7 +4,7 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 
-wFileName = "cleanData.txt"
+wFileName = "errorLog.txt"
 wFile = open(wFileName, 'w')
 
 with open("ping_data.txt") as f:
@@ -20,23 +20,21 @@ for line in content:
         end = val.index(" ");
         val = val[:end]
         cdfVals.append(val)
-        wFile.write(val)
-        wFile.write("\n")
     else:
         errors.append(line)
 
-wFile.close()
-num_bins = 20
-fig = plt.figure()
+plt.xlabel("Probability")
+plt.ylabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
 
-y = np.cumsum(cdfVals)
 sortCdf = np.sort(cdfVals)
-    
-n, bins, patch = plt.hist(sortCdf,bins=100,normed=True,facecolor='blue',alpha=0.5,cumulative=True)
+
+n, bins, patch = plt.hist(sortCdf,bins=100,facecolor='purple',alpha=0.25,cumulative=True)
 
 plt.savefig('cdf.png')
 
 print len(cdfVals)
 for error in errors:
-    print error
+    wFile.write(error)
+    wFile.write("\n")
+wFile.close()
