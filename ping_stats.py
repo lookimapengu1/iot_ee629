@@ -31,9 +31,10 @@ fig = plt.figure()
 ax = fig.add_subplot(111)
 cdfVals = np.array(cdfVals).astype(np.float)
 
+y = np.cumsum(cdfVals)
 sortCdf = np.sort(cdfVals)
     
-n, bins, patch = plt.hist(sortCdf,bins=20,normed=True,facecolor='blue',alpha=0.5)
+n, bins, patch = plt.hist(sortCdf,bins=20,normed=True,facecolor='blue',alpha=0.5,cumulative=True)
 
 plt.savefig('cdf.png')
 
