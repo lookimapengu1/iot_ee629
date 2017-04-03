@@ -27,7 +27,7 @@ plt.xlabel("Probability")
 plt.ylabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
 sortCdf = np.sort(cdfVals)
-x = sortCdf
+x = np.sort(cdfVals)
 sortCdf /= (step*sortCdf).sum()
 cy = np.cumsum(sortCdf*step)
 
