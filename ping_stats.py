@@ -12,7 +12,7 @@ with open("ping_data.txt") as f:
 
 cdfVals = []
 errors = []
-
+step = 0.1
 for line in content:
     if line[0] == '6':
         start = line.index("time=") + 5
@@ -26,10 +26,17 @@ for line in content:
 plt.xlabel("Probability")
 plt.ylabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
-
 sortCdf = np.sort(cdfVals)
-y = np.cumsum(sortCdf)
-n, bins, patch = plt.hist(sortCdf,bins=100,facecolor='purple',alpha=0.25,cumulative=True)
+x = sortCdf
+sortCdf /= (step*sortCdf).sum()
+cy = np.cumsum(sortCdf*step)
+
+for i in cy[:10]:
+    print i
+print cy[86297]
+#x = np.arange(min(sortCdf), max(sortCdf),step)
+plt.plot(x,cy,'b--')
+#n, bins, patch = plt.hist(sortCdf,bins=100,facecolor='purple',alpha=0.25,cumulative=True)
 
 plt.savefig('cdf.png')
 
