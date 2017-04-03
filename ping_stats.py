@@ -28,19 +28,16 @@ plt.ylabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
 sortCdf = np.sort(cdfVals)
 x = np.sort(cdfVals)
+print x[0]
 sortCdf /= (step*sortCdf).sum()
 cy = np.cumsum(sortCdf*step)
 
-for i in cy[:10]:
-    print i
-print cy[86297]
-#x = np.arange(min(sortCdf), max(sortCdf),step)
+print x[0]
 plt.plot(x,cy,'b--')
 #n, bins, patch = plt.hist(sortCdf,bins=100,facecolor='purple',alpha=0.25,cumulative=True)
 
 plt.savefig('cdf.png')
 
-print len(cdfVals)
 for error in errors:
     wFile.write(error)
     wFile.write("\n")
