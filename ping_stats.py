@@ -28,7 +28,7 @@ plt.ylabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
 
 sortCdf = np.sort(cdfVals)
-
+y = np.cumsum(sortCdf)
 n, bins, patch = plt.hist(sortCdf,bins=100,facecolor='purple',alpha=0.25,cumulative=True)
 
 plt.savefig('cdf.png')
