@@ -23,8 +23,8 @@ for line in content:
     else:
         errors.append(line)
 
-plt.xlabel("Probability")
-plt.ylabel("Ping Time (ms)")
+plt.ylabel("Probability")
+plt.xlabel("Ping Time (ms)")
 cdfVals = np.array(cdfVals).astype(np.float)
 sortCdf = np.sort(cdfVals)
 x = np.sort(cdfVals)
