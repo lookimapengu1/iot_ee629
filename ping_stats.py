@@ -34,6 +34,7 @@ for line in content:
 #set axes labels
 plt.ylabel("Probability")
 plt.xlabel("Ping Time (ms)")
+plt.title("Battle.net Ping Times")
 #convert strings to floats for calculations
 cdfVals = np.array(cdfVals).astype(np.float)
 #sort values
