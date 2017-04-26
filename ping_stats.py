@@ -12,7 +12,7 @@ wFileName = "errorLog.txt"
 wFile = open(wFileName, 'w')
 
 #read the data from the text file
-with open("ping_data.txt") as f:
+with open("rawData") as f:
     content = f.readlines()
 
 #initialize labels
