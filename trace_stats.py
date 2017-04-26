@@ -41,7 +41,7 @@ for l in range(len(content)):
 
 plt.ylabel("Probability")
 plt.xlabel("Ping Time (ms)")
-plt.title("Chinese Server Ping Stats")
+plt.title("en.csme.gov.cn Ping Stats")
 
 cdfVals = np.array(cdfVals).astype(np.float)
 sortCdf = np.sort(cdfVals)
